@@ -1,0 +1,167 @@
+.container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: calc(100% - 100rem);
+  width: 100%;
+  color: rgb(51, 51, 51);
+}
+
+.menu {
+  flex: 0 0 auto;
+  width: 190rem;
+  overflow-y: scroll;
+  padding-bottom: 50rem;
+  background-color: rgb(245, 245, 245);
+}
+
+.menu::-webkit-scrollbar {
+  width: 0;
+}
+
+.menu-item {
+  display: flex;
+  height: 141rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 30rem;
+}
+
+.menu-item span {
+  font-size: 30rem;
+  line-height: 40rem;
+  max-height: 80rem;
+  overflow: hidden;
+}
+
+.menu-item.active {
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+}
+
+.menu-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 7.5rem;
+  background-color: rgb(49, 144, 232);
+}
+
+.goods-list {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.goods-list::-webkit-scrollbar {
+  width: 0;
+}
+
+.goods-item {
+  display: flex;
+  border-bottom: 1rem solid rgb(248, 248, 248);
+  padding: 30rem 20rem;
+}
+
+.goods-pic {
+  height: 200rem;
+  width: 200rem;
+  object-fit: contain;
+  border: 1rem solid rgba(0, 0, 0, 0.06);
+  flex: 0 0 auto;
+}
+
+.goods-info {
+  flex: 1 1 auto;
+  padding: 0 35rem;
+  overflow: hidden;
+}
+
+.goods-title {
+  font-size: 35rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 20rem;
+}
+
+.goods-desc {
+  font-size: 24rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 20rem;
+}
+
+.goods-sell {
+  display: flex;
+  font-size: 24rem;
+  margin-bottom: 20rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgb(133, 134, 135);
+}
+
+.goods-sell span:first-child {
+  margin-right: 18rem;
+}
+
+.goods-confirm {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods-price {
+  display: flex;
+  align-items: flex-end;
+  font-size: 35rem;
+  font-weight: bold;
+  color: rgb(255, 102, 0);
+}
+
+.goods-price-unit {
+  font-size: 25rem;
+  margin-bottom: 4rem;
+  font-weight: normal;
+}
+
+.goods-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods-btns .iconfont {
+  width: 40rem;
+  height: 40rem;
+  color: rgb(255, 255, 255);
+  font-size: 23rem;
+  line-height: 40rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgb(74, 144, 225);
+}
+
+.goods-btns .i-jianhao {
+  display: none;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  border: 1rem solid rgb(74, 144, 225);
+  color: rgb(74, 144, 225);
+}
+
+.goods-btns span {
+  display: none;
+  margin: 0 15rem;
+}
+
+.goods-item.active span {
+  display: block;
+}
+
+.goods-item.active .i-jianhao {
+  display: block;
+}

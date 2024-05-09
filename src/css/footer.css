@@ -1,0 +1,99 @@
+.footer {
+  display: flex;
+  height: 100rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  color: rgb(255, 255, 255);
+}
+
+.footer-left-car {
+  flex-grow: 1;
+  padding-left: 175rem;
+  position: relative;
+  background-color: rgb(61, 61, 63);
+}
+
+.footer-right-pay {
+  width: 250rem;
+  font-size: 35rem;
+  line-height: 100rem;
+  text-align: center;
+  background-color: rgb(83, 83, 86);
+}
+
+.footer-right-pay>* {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-right-pay a {
+  display: none;
+}
+
+.footer-right-pay span {
+  font-size: 30rem;
+}
+
+.footer-right-pay.active {
+  background-color: rgb(118, 213, 114);
+}
+
+.footer-right-pay.active a {
+  display: block;
+}
+
+.footer-right-pay.active span {
+  display: none;
+}
+
+.footer-car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 118rem;
+  width: 118rem;
+  top: -35rem;
+  left: 25rem;
+  font-size: 60rem;
+  border: 9rem solid rgb(68, 68, 68);
+  border-radius: 50%;
+  background: inherit;
+}
+
+.footer-car.active {
+  background-color: rgb(74, 144, 225);
+}
+
+.footer-car.active .footer-car-badge {
+  display: block;
+}
+
+.footer-car-badge {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  background-color: rgb(236, 85, 51);
+  font-size: 25rem;
+  line-height: 35rem;
+  text-align: center;
+}
+
+.footer-car-price {
+  display: flex;
+  font-size: 40rem;
+  margin-top: 5rem;
+}
+
+.footer-car-tip {
+  font-size: 20rem;
+  margin-left: 6rem;
+}
